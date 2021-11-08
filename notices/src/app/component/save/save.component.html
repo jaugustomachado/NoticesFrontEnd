@@ -1,0 +1,22 @@
+<h1>{{head}}</h1>
+
+<form [formGroup]="saveForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for = "title">title: </label>
+        <input id="title" type="text" formControlName="title">
+    </div>
+    
+    <div>
+        <label for = "descriptions">descriptions:</label>
+        <input id="descriptions" type="text" formControlName="descriptions">
+    </div>
+
+    <div>
+        <button type="submit" [disabled]="!saveForm.valid">Save</button>
+        
+        <a [routerLink]="['/List']">
+            <button>Cancel</button>
+        </a>
+    </div>
+</form>

@@ -1,0 +1,32 @@
+<h1>{{head}}</h1>
+
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for = "title">title: </label>
+        <input id="title" type="text" formControlName="title">
+    </div>
+
+    <div>
+        <button type="submit" [disabled]="!searchForm.valid">Search</button>
+    </div>
+</form>
+
+
+<div style="text-align: -webkit-center;">
+    <table style="width: 1000px;">
+        <tr style="font-weight: bold;">
+            <td style="width: 10%;">id</td>
+            <td style="width: 25%;">title</td>
+        </tr>
+        <tr style="height: 30px;" *ngFor="let notice of search">
+            <td>{{notice.id}}</td>
+            <td>{{notice.title}}</td>
+            <td>
+                <a [routerLink]="['/Update-Partially']">
+                    <img src="./../../../assets/updateicon.png" style="width: 20px;">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>

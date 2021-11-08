@@ -1,0 +1,15 @@
+<h1>{{head}}</h1>
+
+<form [formGroup]="deleteForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for = "id">id: </label>
+        <input id="id" type="number" formControlName="id">
+    </div>
+
+    <div>
+        <button type="submit" [disabled]="!deleteForm.valid">Delete</button>
+    </div>
+
+
+</form>
