@@ -11,8 +11,7 @@ Passo A Passo para utilização do FrontEnd:
 
 No canto superior da tela numa barra azul está situado o menu com as funcionalidades disponíveis ao usuário.
 
-List: ao clicar nesse link o usuário é levado a uma lista com o id e títulos de todos os avisos presentes no banco de dados, ao lado do título existe um ícone de mensagem ![alt text](
-https://github.com/jaugustomachado/NoticesFrontEnd/blob/master/notices/src/assets/updateicon.png) clicando nele o usuário é levado a outra página onde deve entrar com o id do aviso (obtido na pagina List) e clicar em Details. Todas as Informações do aviso são disponibilizadas, e se caso for a primeira vez de abertura dos destalhes do aviso em questão, a data de vizualização tem o seu set.
+List: ao clicar nesse link o usuário é levado a uma lista com o id e títulos de todos os avisos presentes no banco de dados, ao lado do título existe um ícone de mensagem ( <image src = https://github.com/jaugustomachado/NoticesFrontEnd/blob/master/notices/src/assets/updateicon.png width="25" height="25" /> ) clicando nele o usuário é levado a outra página onde deve entrar com o id do aviso (obtido na pagina List) e clicar em Details. Todas as Informações do aviso são disponibilizadas, e se caso for a primeira vez de abertura dos destalhes do aviso em questão, a data de vizualização tem o seu set.
 
 Search: nesse Link do menu o usuário deve passar o título do aviso (pode ser apenas uma parte do título, para uma busca de avisos do mesmo assunto) e logo após clicar em Search, onde será disponibizado uma lista com id e título do aviso pesquisado, o ícone ao lado do aviso também segue a mesma lógica citada acima.
 
